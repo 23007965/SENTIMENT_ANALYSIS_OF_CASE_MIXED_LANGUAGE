@@ -33,10 +33,14 @@ o Emojis retained and processed as important affective features
 # Proposed model
 
 The proposed framework introduces a comprehensive sentiment analysis pipeline tailored for code-mixed Tamil-English (Tanglish) social media text enriched with emojis. The system is designed to address linguistic irregularities, transliteration variations and the affective cues conveyed through emojis, which significantly influence sentiment interpretation. The pipeline integrates advanced preprocessing techniques, multilingual transformer embeddings, class imbalance handling and multiple classification models to ensure robust performance across heterogeneous sentiment categories.
+
 A. Data Preprocessing
+
 Each social media post undergoes systematic preprocessing to normalize noisy and informal user-generated content. The procedure includes lowercasing, removal of URLs, punctuation, special characters and numerals, along with elimination of stopwords. Emojis are preserved and processed as meaningful features due to their strong correlation with emotional expression in code-mixed text. This step ensures retention of affective signals while reducing textual noise.
+
 B. Label Encoding
 To facilitate supervised learning, sentiment categories—Positive, Negative, Mixed Feelings, Unknown State, and Not-Tamil—are numerically encoded using scikit-learn’s LabelEncoder. This conversion allows machine learning and transformer-based models to interpret categorical outputs effectively.
+
 C. Feature Extraction
 Two complementary feature extraction strategies are employed.
 1.	TF-IDF Vectorization is applied to the preprocessed text for classical ML classifiers such as Logistic Regression and SVM.

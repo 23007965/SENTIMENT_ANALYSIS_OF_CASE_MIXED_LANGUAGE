@@ -153,8 +153,11 @@ IndicBERT scored 75%, performing significantly better than MuRIL (60%), but stil
 Through quantitative evaluation, the following insights were observed:
 
 •	Classical ML models outperform transformers for the given Tanglish dataset due to the structured nature of TF-IDF features and the relatively small dataset size.
+
 •	IndicBERT shows potential, benefiting from multilingual pretraining across Indian languages, making it more suitable than MuRIL for code-mixed Tamil-English input.
+
 •	MuRIL underperforms likely because of insufficient exposure to transliterated Tamil forms and high variability in user-generated text.
+
 •	Transformer models require domain-specific augmentation, larger training corpora, and optimized fine-tuning to fully leverage their contextual encoding abilities.
 
 In summary, Logistic Regression and SVM deliver the most reliable results for Tanglish sentiment analysis under current conditions, while IndicBERT presents a promising foundation for future multilingual transformer improvements.

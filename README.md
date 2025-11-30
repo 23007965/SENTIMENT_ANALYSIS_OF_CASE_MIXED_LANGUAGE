@@ -79,9 +79,9 @@ The performance of the sentiment and emotion prediction system was evaluated usi
 
 ### Example 1
 
-Input: Nalla padam da sema feel varuthu 😊
+**Input:** Nalla padam da sema feel varuthu 😊
 
-Sentiment: Positive, Emotion: HAPPY
+**Sentiment:** Positive, **Emotion:** HAPPY
 
 This example demonstrates the system’s ability to interpret both linguistic cues (“sema feel”) and emoji signals to classify the emotional tone accurately.
 
@@ -89,9 +89,9 @@ This example demonstrates the system’s ability to interpret both linguistic cu
 
 ### Example 2
 
-Input: Intha trailer mokka da 😳
+**Input:** Intha trailer mokka da 😳
 
-Sentiment: Negative, Emotion: SAD
+**Sentiment:** Negative,**Emotion:** SAD
 
 Here, the system correctly identifies negative sentiment based on the lexical cue mokka (boring) and aligns the emotion with the user’s expression.
  
@@ -99,9 +99,9 @@ Here, the system correctly identifies negative sentiment based on the lexical cu
 
 ### Example 3
 
-Input: Super movie da love it 😍
+**Input:** Super movie da love it 😍
 
-Sentiment: Positive, Emotion: LOVE
+**Sentiment:** Positive, **Emotion:** LOVE
 
 This result highlights the model’s capability to detect emotion categories beyond basic polarity, distinguishing LOVE due to the combination of positive phrasing and emoji.
 
@@ -109,9 +109,9 @@ This result highlights the model’s capability to detect emotion categories bey
 
 ### Example 4
 
-** Input:** Ippadiye poguthu mass 🤣 ... Konjam Irmugan Madhiri irukku....All the best team..
+**Input:** Ippadiye poguthu mass 🤣 ... Konjam Irmugan Madhiri irukku....All the best team..
 
-Sentiment: Mixed_Feelings, Emotion: NEUTRAL 
+**Sentiment:** Mixed_Feelings, **Emotion:** NEUTRAL 
 
 
 This example illustrates the model’s effectiveness in handling complex or multi-topic expressions, where mixed sentiment is present within a single message.

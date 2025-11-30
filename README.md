@@ -117,3 +117,44 @@ This result highlights the model’s capability to detect emotion categories bey
 This example illustrates the model’s effectiveness in handling complex or multi-topic expressions, where mixed sentiment is present within a single message.
 
 <img width="970" height="150" alt="image" src="https://github.com/user-attachments/assets/4ce12e76-2dea-4438-b9d4-1d9be3f81dda" />
+
+### Evaluation
+
+The evaluation phase assesses the effectiveness of the four selected models—Logistic Regression, SVM, MuRIL, and IndicBERT—using standard performance metrics, including accuracy, precision, recall, and F1-score. These metrics provide a comprehensive understanding of each model’s capability in handling code-mixed Tamil-English sentiment classification.
+
+<img width="784" height="227" alt="image" src="https://github.com/user-attachments/assets/ad4ad569-3e16-44ee-88e3-2470f8ba9d07" />
+
+#### Comparative Analysis of Models
+
+<img width="752" height="452" alt="image" src="https://github.com/user-attachments/assets/860a8ed6-5501-42ac-93ab-6a447e3d6aff" />
+
+The above graph summarizes the quantitative results obtained from all models. Logistic Regression demonstrated the highest performance across all metrics, achieving an accuracy of 90.23% and an F1-score of 89.67%. SVM also performed strongly, with an accuracy of 87.8% and an F1-score of 87.6%, reflecting consistent generalization across sentiment categories.
+
+IndicBERT, a multilingual transformer model, achieved 78.88% accuracy and a 75% F1-score, outperforming MuRIL but still trailing behind classical machine learning models. MuRIL recorded lower metrics (accuracy 67%, F1-score 60%), indicating challenges in handling highly transliterated and code-mixed inputs without further domain-specific adaptation.
+
+Overall, the results show that classical models—when paired with TF-IDF features—still deliver superior performance in structured sentiment tasks involving code-mixed text. Transformer-based models demonstrate potential but require deeper fine-tuning and expanded domain-relevant corpora to reach competitive performance on Tanglish datasets.
+Accuracy Comparison
+ 
+#### Accuracy Comparison Across Models
+
+<img width="660" height="376" alt="image" src="https://github.com/user-attachments/assets/482390d3-3557-4d31-bb63-71b4a37fe844" />
+
+The above graph illustrates the accuracy distribution across the four models. Logistic Regression emerged as the top performer with 90.23% accuracy, while SVM closely followed with 87.8%. IndicBERT achieved 78.88%, showing reasonable proficiency in handling multilingual and transliterated text. MuRIL recorded the lowest accuracy (67%), highlighting limitations in zero-shot or minimally fine-tuned transformer settings for code-mixed content.
+These results reinforce that traditional algorithms maintain competitive performance when supported by strong feature engineering, whereas transformers require additional adaptation to handle informal and irregular text patterns.
+F1-Score Comparison
+ 
+#### F1-Score Comparison Across Model
+
+<img width="480" height="288" alt="image" src="https://github.com/user-attachments/assets/5e5e526f-d261-4e06-ac82-195ecf8d72eb" />
+
+The above graph compares the F1-scores across the models. Logistic Regression again leads with an F1-score of 89.67%, reflecting high reliability in distinguishing sentiment categories—even with imbalanced data. SVM achieved 87.6%, indicating robust sentence-level generalization.
+IndicBERT scored 75%, performing significantly better than MuRIL (60%), but still falling short of classical ML models. These results emphasize that while transformer models exhibit strong multilingual capabilities, their performance on code-mixed Tanglish text remains sensitive to domain size, quality of embeddings, and the transliteration patterns present in the training data.
+
+Through quantitative evaluation, the following insights were observed:
+
+•	Classical ML models outperform transformers for the given Tanglish dataset due to the structured nature of TF-IDF features and the relatively small dataset size.
+•	IndicBERT shows potential, benefiting from multilingual pretraining across Indian languages, making it more suitable than MuRIL for code-mixed Tamil-English input.
+•	MuRIL underperforms likely because of insufficient exposure to transliterated Tamil forms and high variability in user-generated text.
+•	Transformer models require domain-specific augmentation, larger training corpora, and optimized fine-tuning to fully leverage their contextual encoding abilities.
+
+In summary, Logistic Regression and SVM deliver the most reliable results for Tanglish sentiment analysis under current conditions, while IndicBERT presents a promising foundation for future multilingual transformer improvements.

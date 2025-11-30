@@ -20,9 +20,9 @@ This project addresses the challenging task of sentiment and emotion analysis in
 
 # Dataset Description
 
-. Dataset size: 14,841 social media posts with mixed Tamil and English text
+o Dataset size: 14,841 social media posts with mixed Tamil and English text
 
-. Sentiment classes: Positive, Negative, Mixed Feelings, Unknown State, Not-Tamil
+o Sentiment classes: Positive, Negative, Mixed Feelings, Unknown State, Not-Tamil
 
-. Emojis retained and processed as important affective features
+o Emojis retained and processed as important affective features
 

@@ -58,10 +58,15 @@ The balanced feature set is partitioned into training and testing subsets using 
 ## F. Model Training
 
 Four distinct models are employed to evaluate performance across both classical and transformer-based paradigms:
+
 •	Logistic Regression (TF-IDF features)
+
 •	Support Vector Machine (SVM) (TF-IDF features)
+
 •	MuRIL Transformer (multilingual contextual embeddings)
+
 •	IndicBERT Transformer (Indian language–optimized embeddings)
+
 Hyperparameters such as penalty terms, kernel functions and learning configurations are tuned to achieve optimal performance. The transformer models leverage deep multilingual embedding layers, providing enhanced capability to interpret transliterated text and mixed-language constructs.
 
 ## G. Prediction and Evaluation

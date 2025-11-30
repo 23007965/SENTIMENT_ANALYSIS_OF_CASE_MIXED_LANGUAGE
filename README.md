@@ -109,7 +109,7 @@ This result highlights the model’s capability to detect emotion categories bey
 
 ### Example 4
 
-Input: Ippadiye poguthu mass 🤣 ... Konjam Irmugan Madhiri irukku....All the best team..
+** Input:** Ippadiye poguthu mass 🤣 ... Konjam Irmugan Madhiri irukku....All the best team..
 
 Sentiment: Mixed_Feelings, Emotion: NEUTRAL 
 

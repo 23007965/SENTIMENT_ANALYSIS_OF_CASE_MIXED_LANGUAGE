@@ -1,4 +1,4 @@
-# SENTIMENT_ANALYSIS_OF_CASE_MIXED_LANGUAGE
+# Sentiment Analysis on Tamil–English Code-Mixed Social Media using NLP
 
 # Project Overview
 
